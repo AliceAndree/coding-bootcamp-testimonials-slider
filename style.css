@@ -11,13 +11,13 @@ body {
     overflow: hidden;
     background-image: url(./images/pattern-curve.svg);
     background-repeat: no-repeat;
-    background-position: 0px 610px;
+    background-position: bottom 0px left 0px;
     display: flex;
 }
 .container {
     display: none;
     width: 1202px;
-    margin: auto;
+    margin: 50px auto 0;
     position: relative;
     left: 45px;
     height: 657px;
@@ -28,7 +28,7 @@ body {
 .text-box {
     width: 505px;
     height: 354px;
-    margin-top: 101px;
+    margin-top: 164px;
     background-color: transparent;
     float: left;
     font-weight: 300;
@@ -60,6 +60,11 @@ body {
 .function {
     font-weight: 500;
     color: hsl(240, 18%, 77%);
+    padding-left: 5px;
+}
+
+.line-break {
+    display: none;
 }
 
 .portrait-background {
@@ -120,6 +125,7 @@ body {
 }
 
 .prev-button:hover {
+    cursor: pointer;
     background-color: rgb(255, 240, 212);
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
@@ -127,6 +133,7 @@ body {
 }
 
 .next-button:hover {
+    cursor: pointer;
     background-color: rgb(255, 240, 212);
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
@@ -138,11 +145,177 @@ body {
 }
 
 .next {
+    margin-left: 22px;
+}
+
+.prev img {
+    width: 10px;
+    height: 16px;
+    margin-left: 22px;
+}
+
+.next img {
+    width: 10px;
+    height: 16px;
     margin-left: 24px;
 }
 
 .attribution {
     position: absolute;
-    top: 720px;
-    left: 40%;
+    color: hsl(240, 18%, 77%);
+    top: 730px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.attribution a {
+    color: hsl(240, 18%, 77%);
+}
+
+@media (max-width: 1295px) {
+    body {
+        overflow: visible;
+        background-size: 285px 72px;
+        /* background-position: bottom -100px left 0; */
+    }
+
+    .container {
+        margin-top: 50px;
+        width: 735px;
+        left: 0;
+    }
+
+    .portrait-background {
+        width: 327px;
+        height: 308px;
+        margin: auto;
+        float: none;
+    }
+
+    .portrait-box {
+        width: 254px;
+        height: 253px;
+        margin: 30px 35.5px 24.5px 37px;
+    }
+
+    .button {
+        width: 80px;
+        height: 40px;
+        top: 263px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .prev {
+        margin-left: 17.14px;
+        width: 5.7px;
+        height: 11.4px;
+    }
+
+    .next {
+        margin-left: 17.14px;
+        width: 5.7px;
+        height: 11.4px;
+    }
+
+    .text-box {
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        float: none;
+        margin-top: 32px;
+        background-size: 60px 50px;
+        background-position: center 0;
+    }
+
+    .testimonial{
+        width: 85%;
+        height: auto;
+        margin: auto;
+        padding: 25px 0 19px;
+    }
+
+    .author {
+        font-size: 15px;
+        line-height: 20px;
+        position: static;
+    }
+
+    .function {
+        padding-left: 0;
+    }
+
+    .line-break {
+        display: inline;
+    }
+
+    .attribution {
+        top: 720px;
+        width: 210px;
+        font-size: 8px;
+        color: hsl(240, 18%, 77%);
+    }
+
+    .attribution a {
+        color: hsl(240, 18%, 77%);
+    }
+
+}
+
+@media (max-width: 414px) and (min-height: 896px) {
+    .container {
+        margin-top: 90px;
+    }
+
+    .attribution {
+        top: 870px
+    }
+}
+
+@media (max-width: 375px) and (min-height: 812px) {
+    .container {
+        margin-top: 70px;
+    }
+
+    .attribution {
+        top: 790px
+    }
+}
+
+@media (max-width: 360px) and (min-height: 640px) {
+    body {
+        background-position: bottom -70px left 0;
+    }
+
+    .container{
+        margin-top: 30px;
+    }
+    
+    .attribution {
+        top: 665px;
+    }
+}
+
+@media (max-width: 375px) and (min-height: 667px) {
+    body {
+        background-position: bottom -40px left 0;
+    }
+    
+    .attribution {
+        top: 685px;
+    }
+}
+
+
+@media (max-width: 320px) and (min-height: 568px) {
+    body {
+        background-position: bottom -140px left 0;
+    }
+    
+    .attribution {
+        top: 685px;
+    }
 }

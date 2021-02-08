@@ -21,3 +21,16 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
 }
+
+//detecting arrow key presses
+document.addEventListener('keydown', function(e) {
+    switch (e.keyCode) {
+        case 37:
+            alert('left');
+            break;
+        case 39:
+            alert('right');
+            break;
+    }
+});
+
