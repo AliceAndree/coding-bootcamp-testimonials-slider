@@ -161,8 +161,8 @@ body {
 }
 
 .attribution {
-    position: absolute;
     color: hsl(240, 18%, 77%);
+    position: absolute;
     top: 730px;
     left: 50%;
     transform: translateX(-50%);
@@ -176,7 +176,6 @@ body {
     body {
         overflow: visible;
         background-size: 285px 72px;
-        /* background-position: bottom -100px left 0; */
     }
 
     .container {
