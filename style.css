@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+    font-family:'Inter', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    background-image: url(./images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 0px left 0px;
+    display: flex;
+}
+.container {
+    display: none;
+    width: 1202px;
+    margin: 50px auto 0;
+    position: relative;
+    left: 45px;
+    height: 657px;
+    display: flex;
+    align-items: center;
+}
+
+.text-box {
+    width: 505px;
+    height: 354px;
+    margin-top: 164px;
+    background-color: transparent;
+    float: left;
+    font-weight: 300;
+    font-size: 32px;
+    color: hsl(240, 38%, 20%);
+    line-height: 44px;
+    background-image: url(./images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: 97px 0;
+    position: relative;
+}
+
+.testimonial {
+    height: 220px;
+    margin: 0;
+    padding: 67px 0 0;
+    width: 635px;
+}
+
+.author {
+    font-weight: 700;
+    font-size: 20px;
+    color: hsl(240, 38%, 20%);
+    line-height: 38px;
+    position: absolute;
+    bottom: 0;
+}
+
+.function {
+    font-weight: 500;
+    color: hsl(240, 18%, 77%);
+    padding-left: 5px;
+}
+
+.line-break {
+    display: none;
+}
+
+.portrait-background {
+    float: right;
+    background-image: url(./images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.portrait-box {
+    border-radius: 5px;
+    margin: 63px 92px 54px 65px;
+    z-index: -1;
+    box-shadow:         0px 40px 50px -30px rgba(36, 36, 113, 0.495);
+    -moz-box-shadow:    0px 40px 50px -30px rgba(36, 36, 113, 0.495);
+    -webkit-box-shadow: 0px 40px 50px -30px rgba(36, 36, 113, 0.495);   
+}
+
+.button {
+    position: absolute;
+    top: 575px;
+    right: 458px;
+    width: 112px;
+    height: 56px;
+    padding: 0;
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 28px;
+    box-shadow:         0px 15px 20px -10px rgba(36, 36, 113, 0.0991);
+    -moz-box-shadow:    0px 15px 20px -10px rgba(36, 36, 113, 0.0991);
+    -webkit-box-shadow: 0px 15px 20px -10px rgba(36, 36, 113, 0.0991);
+}
+
+.button a {
+    text-decoration: none;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.prev-button {
+    float: left;
+    width: 50%;
+    border-radius: 28px 0 0 28px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.next-button {
+    float: right;
+    width: 50%;
+    border-radius: 0 28px 28px 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.prev-button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 240, 212);
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+.next-button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 240, 212);
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+.prev {
+    margin-left: 22px;
+}
+
+.next {
+    margin-left: 22px;
+}
+
+.prev img {
+    width: 10px;
+    height: 16px;
+    margin-left: 22px;
+}
+
+.next img {
+    width: 10px;
+    height: 16px;
+    margin-left: 24px;
+}
+
+.attribution {
+    position: absolute;
+    color: hsl(240, 18%, 77%);
+    top: 730px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.attribution a {
+    color: hsl(240, 18%, 77%);
+}
+
+@media (max-width: 1295px) {
+    body {
+        overflow: visible;
+        background-size: 285px 72px;
+        /* background-position: bottom -100px left 0; */
+    }
+
+    .container {
+        margin-top: 50px;
+        width: 735px;
+        left: 0;
+    }
+
+    .portrait-background {
+        width: 327px;
+        height: 308px;
+        margin: auto;
+        float: none;
+    }
+
+    .portrait-box {
+        width: 254px;
+        height: 253px;
+        margin: 30px 35.5px 24.5px 37px;
+    }
+
+    .button {
+        width: 80px;
+        height: 40px;
+        top: 263px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .prev {
+        margin-left: 17.14px;
+        width: 5.7px;
+        height: 11.4px;
+    }
+
+    .next {
+        margin-left: 17.14px;
+        width: 5.7px;
+        height: 11.4px;
+    }
+
+    .text-box {
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        float: none;
+        margin-top: 32px;
+        background-size: 60px 50px;
+        background-position: center 0;
+    }
+
+    .testimonial{
+        width: 85%;
+        height: auto;
+        margin: auto;
+        padding: 25px 0 19px;
+    }
+
+    .author {
+        font-size: 15px;
+        line-height: 20px;
+        position: static;
+    }
+
+    .function {
+        padding-left: 0;
+    }
+
+    .line-break {
+        display: inline;
+    }
+
+    .attribution {
+        top: 720px;
+        width: 210px;
+        font-size: 8px;
+        color: hsl(240, 18%, 77%);
+    }
+
+    .attribution a {
+        color: hsl(240, 18%, 77%);
+    }
+
+}
+
+@media (max-width: 414px) and (min-height: 896px) {
+    .container {
+        margin-top: 90px;
+    }
+
+    .attribution {
+        top: 870px
+    }
+}
+
+@media (max-width: 375px) and (min-height: 812px) {
+    .container {
+        margin-top: 70px;
+    }
+
+    .attribution {
+        top: 790px
+    }
+}
+
+@media (max-width: 360px) and (min-height: 640px) {
+    body {
+        background-position: bottom -70px left 0;
+    }
+
+    .container{
+        margin-top: 30px;
+    }
+    
+    .attribution {
+        top: 665px;
+    }
+}
+
+@media (max-width: 375px) and (min-height: 667px) {
+    body {
+        background-position: bottom -40px left 0;
+    }
+    
+    .attribution {
+        top: 685px;
+    }
+}
+
+
+@media (max-width: 320px) and (min-height: 568px) {
+    body {
+        background-position: bottom -140px left 0;
+    }
+    
+    .attribution {
+        top: 685px;
+    }
+}
