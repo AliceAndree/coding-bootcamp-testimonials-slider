@@ -163,6 +163,8 @@ body {
 .attribution {
     color: hsl(240, 18%, 77%);
     position: absolute;
+    font-size: 11px;
+    text-align: center;
     top: 730px;
     left: 50%;
     transform: translateX(-50%);
