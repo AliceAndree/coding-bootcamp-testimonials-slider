@@ -26,10 +26,10 @@ function showSlides(n) {
 document.addEventListener('keydown', function(e) {
     switch (e.keyCode) {
         case 37:
-            alert('left');
+            plusSlides(-1);
             break;
         case 39:
-            alert('right');
+            plusSlides(1);
             break;
     }
 });
